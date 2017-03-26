@@ -12,10 +12,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import lombok.AllArgsConstructor;
+
 /**
  * @author Branislav Lazic
  */
 @Controller
+@AllArgsConstructor
 public class PersonController {
 
 	private static final int BUTTONS_TO_SHOW = 5;
@@ -24,10 +27,6 @@ public class PersonController {
 	private static final int[] PAGE_SIZES = { 5, 10, 20 };
 
 	private PersonService personService;
-
-	public PersonController(PersonService studentService) {
-		this.personService = studentService;
-	}
 
 	/**
 	 * Handles all requests
