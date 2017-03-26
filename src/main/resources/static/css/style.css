@@ -2,6 +2,11 @@
 	text-align: center;
 }
 
+.pagination-ranges {
+	padding: 6px;
+	text-align: right;
+}
+
 .disabled {
 	pointer-events: none;
 	opacity: 0.5;
